@@ -1,1 +1,37 @@
-<svg width="0" height="0" style="position:absolute"><symbol fill="none" viewBox="0 0 10 10" id="cart" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aclip0)" fill="#231F20"><path d="M9.862 2.522a.358.358 0 00-.273-.129H7.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H4.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H.321a.358.358 0 00-.273.129.397.397 0 00-.09.3l.648 5.963C.618 9.457 1.142 10 1.784 10h6.342c.642 0 1.166-.543 1.178-1.215l.649-5.964a.398.398 0 00-.09-.3z"/><path d="M3.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C7.117.646 6.435 0 5.496 0h-.901C3.6 0 2.793.69 2.793 1.538v1.88c0 .19.162.343.36.343z"/></g><defs><clipPath id="aclip0"><path fill="#fff" d="M0 0h10v10H0z"/></clipPath></defs></symbol><symbol fill="none" viewBox="0 0 10 10" id="chart" xmlns="http://www.w3.org/2000/svg"><path d="M.917 3.367h1.75v5.716H.917V3.367zM4.183.917h1.634v8.166H4.183V.917zM7.45 5.583h1.633v3.5H7.45v-3.5z" fill="#000"/></symbol><symbol fill="none" viewBox="0 0 21 21" id="check" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.077 8.75L3.385 10.5l5.077 5.25L16.923 7l-1.692-1.75-6.77 7-3.384-3.5z" fill="#000"/></symbol><symbol fill="none" viewBox="0 0 30 30" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M22.95 24.725L15 16.762l-7.95 7.963-1.775-1.775L13.237 15 5.275 7.05 7.05 5.275 15 13.238l7.95-7.95 1.762 1.762-7.95 7.95 7.95 7.95-1.762 1.775z" fill="#fff" opacity=".7"/></symbol><symbol fill="none" viewBox="0 0 18 18" id="down" xmlns="http://www.w3.org/2000/svg"><path d="M14 4H3l5.5 10L14 4z" fill="#000"/></symbol><symbol fill="none" viewBox="0 0 22 22" id="plus" xmlns="http://www.w3.org/2000/svg"><path d="M18.7 9.9v2.2h-6.6v6.6H9.9v-6.6H3.3V9.9h6.6V3.3h2.2v6.6h6.6z" fill="#000" fill-opacity=".3"/></symbol><symbol fill="none" viewBox="0 0 16 16" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M6.667 12a5.301 5.301 0 003.264-1.125l2.931 2.93.943-.942-2.931-2.931A5.3 5.3 0 0012 6.667a5.34 5.34 0 00-5.333-5.334 5.34 5.34 0 00-5.334 5.334A5.34 5.34 0 006.667 12zm0-9.333c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z" fill="#000"/></symbol><symbol fill="none" viewBox="0 0 18 18" id="up" xmlns="http://www.w3.org/2000/svg"><path d="M3 14h11L8.5 4 3 14z" fill="#000"/></symbol><symbol fill="none" viewBox="0 0 13 14" id="user" xmlns="http://www.w3.org/2000/svg"><path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z" fill="#000"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute">
+  <symbol fill="none" viewBox="0 0 10 10" id="cart" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#aclip0)" fill="#231F20">
+      <path d="M9.862 2.522a.358.358 0 00-.273-.129H7.658V3.42c0 .471-.404.855-.901.855s-.901-.384-.901-.855V2.393H4.054V3.42c0 .471-.404.855-.9.855-.498 0-.902-.384-.902-.855V2.393H.321a.358.358 0 00-.273.129.397.397 0 00-.09.3l.648 5.963C.618 9.457 1.142 10 1.784 10h6.342c.642 0 1.166-.543 1.178-1.215l.649-5.964a.398.398 0 00-.09-.3z" />
+      <path d="M3.153 3.76c.2 0 .36-.153.36-.341v-1.88c0-.528.562-.855 1.082-.855h.9c.548 0 .902.335.902.854v1.88c0 .19.161.343.36.343.199 0 .36-.154.36-.342v-1.88C7.117.646 6.435 0 5.496 0h-.901C3.6 0 2.793.69 2.793 1.538v1.88c0 .19.162.343.36.343z" />
+    </g>
+    <defs>
+      <clipPath id="aclip0">
+        <path fill="#fff" d="M0 0h10v10H0z" />
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol fill="none" viewBox="0 0 10 10" id="chart" xmlns="http://www.w3.org/2000/svg">
+    <path d="M.917 3.367h1.75v5.716H.917V3.367zM4.183.917h1.634v8.166H4.183V.917zM7.45 5.583h1.633v3.5H7.45v-3.5z" fill="#000" />
+  </symbol>
+  <symbol fill="none" viewBox="0 0 21 21" id="check" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.077 8.75L3.385 10.5l5.077 5.25L16.923 7l-1.692-1.75-6.77 7-3.384-3.5z" fill="#000" />
+  </symbol>
+  <symbol fill="none" viewBox="0 0 30 30" id="cross" xmlns="http://www.w3.org/2000/svg">
+    <path d="M22.95 24.725L15 16.762l-7.95 7.963-1.775-1.775L13.237 15 5.275 7.05 7.05 5.275 15 13.238l7.95-7.95 1.762 1.762-7.95 7.95 7.95 7.95-1.762 1.775z" fill="#fff" opacity=".7" />
+  </symbol>
+  <symbol fill="none" viewBox="0 0 18 18" id="down" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 4H3l5.5 10L14 4z" fill="#000" />
+  </symbol>
+  <symbol fill="none" viewBox="0 0 22 22" id="plus" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18.7 9.9v2.2h-6.6v6.6H9.9v-6.6H3.3V9.9h6.6V3.3h2.2v6.6h6.6z" fill="#000" fill-opacity=".3" />
+  </symbol>
+  <symbol fill="none" viewBox="0 0 16 16" id="search" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.667 12a5.301 5.301 0 003.264-1.125l2.931 2.93.943-.942-2.931-2.931A5.3 5.3 0 0012 6.667a5.34 5.34 0 00-5.333-5.334 5.34 5.34 0 00-5.334 5.334A5.34 5.34 0 006.667 12zm0-9.333c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z" fill="#000" />
+  </symbol>
+  <symbol fill="none" viewBox="0 0 18 18" id="up" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 14h11L8.5 4 3 14z" fill="#000" />
+  </symbol>
+  <symbol fill="none" viewBox="0 0 13 14" id="user" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.5 2.333c1.197 0 2.167 1.044 2.167 2.334C8.667 5.956 7.697 7 6.5 7 5.303 7 4.333 5.956 4.333 4.667c0-1.29.97-2.334 2.167-2.334zm0 9.334s4.333 0 4.333-1.167c0-1.4-2.112-2.917-4.333-2.917-2.22 0-4.333 1.517-4.333 2.917 0 1.167 4.333 1.167 4.333 1.167z" fill="#000" />
+  </symbol>
+</svg>
