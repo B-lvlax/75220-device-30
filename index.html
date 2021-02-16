@@ -188,10 +188,10 @@
       <ul class="header-user user">
         <li class="user-item user-itemSerch">
           <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <label>
+            <input id="searchField" class="search-input" type="search" name="searchField" minlength="2" placeholder="Поиск по сайту" required>
+            <label for="searchField">
               <svg class="search-icon" width="16" height="16"><use xlink:href="#icons--search"/></svg>
-              <input class="search-input" type="search" name="searchField" minlength="2" placeholder="Поиск по сайту" required>
-          </label>
+            </label>
             <button class="search-btn" type="submit">Найти</button>
           </form>
         </li>
