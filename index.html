@@ -181,66 +181,68 @@
       </symbol>
     </svg>
 
-    <header class="header">
-      <div class="header-logo">
-        <svg width="163" height="35"><use xlink:href="#logo"/></svg>
-      </div>
-      <ul class="header-user user">
-        <li class="user-item user-itemSerch">
-          <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <input id="searchField" class="search-input" type="search" name="searchField" minlength="2" placeholder="Поиск по сайту" required>
-            <label for="searchField">
-              <svg class="search-icon" width="16" height="16"><use xlink:href="#icons--search"/></svg>
-            </label>
-            <button class="search-btn" type="submit">Найти</button>
-          </form>
-        </li>
-        <li class="user-item">
-          <a class="user-link" href="#">
-            <svg class="user-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
-            Войти
-          </a>
-        </li>
-        <li class="user-item">
-          <a class="user-link" href="#">
-            <svg class="user-icon" width="10" height="10"><use xlink:href="#icons--chart"/></svg>
-            Сравнить
-          </a>
-        </li>
-        <li class="user-item">
-          <a class="user-link" href="#">
-            <svg class="user-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
-            Корзина
-          </a>
-        </li>
-      </ul>
-      <nav class="header-nav nav">
-        <ul class="nav-list">
-          <li>
-            <a class="nav-link" href="catalog.html">
-              Каталог товаров
-              <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
-            </a>
-            <ul class="nav-subList">
-              <li><a class="nav-subLink" href="catalog.html">Виртуальная реальность</a></li>
-              <li><a class="nav-subLink" href="catalog.html">Фитнес-браслеты</a></li>
-              <li><a class="nav-subLink" href="catalog.html">Квадрокоптер</a></li>
-              <li><a class="nav-subLink" href="catalog.html">Моноподы для селфи</a></li>
-              <li><a class="nav-subLink" href="catalog.html">Умные часы</a></li>
-              <li><a class="nav-subLink" href="catalog.html">Экшн-камеры</a></li>
-            </ul>
+    <div class="layoutCenter">
+      <header class="header">
+        <div class="header-logo"><svg width="163" height="35"><use xlink:href="#logo"/></svg></div>
+
+        <ul class="header-user user">
+          <li class="user-item user-itemSerch">
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+              <input id="searchField" class="search-input" type="search" name="searchField" minlength="2" placeholder="Поиск по сайту" required>
+              <label for="searchField">
+                <svg class="search-icon" width="16" height="16"><use xlink:href="#icons--search"/></svg>
+              </label>
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
           </li>
-          <li><a class="nav-link" href="#">Доставка</a></li>
-          <li><a class="nav-link" href="#">Гарантия</a></li>
-          <li><a class="nav-link" href="#">Контакты</a></li>
+          <li class="user-item">
+            <a class="user-link" href="#">
+              <svg class="user-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
+              Войти
+            </a>
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#">
+              <svg class="user-icon" width="10" height="10"><use xlink:href="#icons--chart"/></svg>
+              Сравнить
+            </a>
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#">
+              <svg class="user-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
+              Корзина
+            </a>
+          </li>
         </ul>
-      </nav>
-    </header>
 
-    <main class="main">
-      <h1>Device - магазин гаджетов</h1>
+        <nav class="header-nav nav">
+          <ul class="nav-list">
+            <li>
+              <a class="nav-link" href="catalog.html">
+                Каталог товаров
+                <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
+              </a>
+              <ul class="nav-subList">
+                <li><a class="nav-subLink" href="catalog.html">Виртуальная реальность</a></li>
+                <li><a class="nav-subLink" href="catalog.html">Фитнес-браслеты</a></li>
+                <li><a class="nav-subLink" href="catalog.html">Квадрокоптер</a></li>
+                <li><a class="nav-subLink" href="catalog.html">Моноподы для селфи</a></li>
+                <li><a class="nav-subLink" href="catalog.html">Умные часы</a></li>
+                <li><a class="nav-subLink" href="catalog.html">Экшн-камеры</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="#">Доставка</a></li>
+            <li><a class="nav-link" href="#">Гарантия</a></li>
+            <li><a class="nav-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-      <div class="promo">
+    <main class="index-main main">
+      <h1 class="layoutCenter">Device - магазин гаджетов</h1>
+
+      <div class="promo layoutCenter">
         <ul class="promo-controls">
           <li class="promo-inputGroup">
             <input id="sliderToggle-1" type="radio" name="sliderToggle" checked>
@@ -302,7 +304,7 @@
         </div>
       </div>
 
-      <ul class="categories">
+      <ul class="categories layoutCenter">
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
             <svg class="categories-icon" width="97" height="55"><use xlink:href="#categories--glasses"/></svg>
@@ -342,7 +344,7 @@
       </ul>
 
       <div class="services--bg">
-        <section сlass="services">
+        <section class="services layoutCenter">
           <ul class="services-tabs">
             <li><a class="services-tab btn" href="#">Доставка</a></li>
             <li><a class="services-tab btn" href="#">Гарантия</a></li>
@@ -368,23 +370,30 @@
         </section>
       </div>
 
-      <ul class="brands">
+      <ul class="brands layoutCenter">
         <li class="brands-item">
-          <a class="brands-link" href="#"><img src="img/brands/dji.jpg" width="260" height="100" alt="DJI"></a>
+          <a class="brands-link" href="#">
+            <img class="brands-img" src="img/brands/dji.jpg" width="260" height="100" alt="DJI">
+          </a>
         </li>
         <li class="brands-item">
-          <a class="brands-link" href="#"><img src="img/brands/spGadgets.jpg" width="260" height="100" alt="Sp.Gadjets"
-            ></a>
+          <a class="brands-link" href="#">
+            <img class="brands-img" src="img/brands/spGadgets.jpg" width="260" height="100" alt="Sp.Gadjets">
+          </a>
         </li>
         <li class="brands-item">
-          <a class="brands-link" href="#"><img src="img/brands/gopro.jpg" width="260" height="100" alt="GoPro"></a>
+          <a class="brands-link" href="#">
+            <img class="brands-img" src="img/brands/gopro.jpg" width="260" height="100" alt="GoPro">
+          </a>
         </li>
         <li class="brands-item">
-          <a class="brands-link" href="#"><img src="img/brands/vive.jpg" width="260" height="100" alt="Vive"></a>
+          <a class="brands-link" href="#">
+            <img class="brands-img" src="img/brands/vive.jpg" width="260" height="100" alt="Vive">
+          </a>
         </li>
       </ul>
 
-      <div class="info">
+      <div class="info layoutCenter">
         <section class="about">
           <h2 class="about-title title title--custom">О нас</h2>
           <p class="about-txt">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -399,14 +408,16 @@
         <section class="contacts">
           <h2 class="contacts-title title title--custom">Контакты</h2>
           <p class="contacts-txt">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts-link" href="#"><img src="img/map--sm.jpg" width="560" height="222" alt="Местоположение на карте по адресу Москва, улица Строителей, 15"></a>
+          <a class="contacts-link" href="#">
+            <img class="contacts-img" src="img/map--sm.jpg" width="560" height="222" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
+          </a>
           <a class="contacts-btn btn" href="№">Напишите нам</a>
         </section>
       </div>
     </main>
 
     <div class="footer--bg">
-      <footer class="footer">
+      <footer class="footer layoutCenter">
         <div class="footer-left">
           <div class="footer-logo">
             <svg width="163" height="35"><use xlink:href="#logo"/></svg>
@@ -471,8 +482,8 @@
       </footer>
     </div>
 
-    <div>
-      <form class="msgForm" action="https://echo.htmlacademy.ru" method="post">
+    <div class="modals layoutCenter">
+      <form class="modals-msgForm msgForm" action="https://echo.htmlacademy.ru" method="post">
         <div class="msgForm-inputGroup">
           <label class="msgForm-label" for="name">Ваше имя:</label>
           <input class="msgForm-field" id="name" type="text" name="name" placeholder="Имя фамилия" required>
@@ -481,7 +492,7 @@
           <label class="msgForm-label" for="mail">Ваш e-mail:</label>
           <input class="msgForm-field" id="mail" type="email" name="mail" placeholder="email@example.com" required>
         </div>
-        <div class="msgForm-inputGroup">
+        <div class="msgForm-inputGroup msgForm-textarea">
           <label class="msgForm-label" for="message">Текст письма:</label>
           <textarea class="msgForm-field msgForm-textarea" id="message" name="message" cols="30" rows="10" minlength="20" placeholder="В свободной форме" required></textarea>
         </div>
@@ -492,12 +503,12 @@
         </button>
       </form>
 
-      <div>
+      <div class="modals-map map">
         <button class="btnClose" type="button" title="Закрыть">
           <svg width="30" height="30"><use xlink:href="#icons--cross"/></svg>
           <span>Закрыть</span>
         </button>
-        <img src="img/map--lg.jpg" width="994" height="593" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
+        <img class="map-img" src="img/map--lg.jpg" width="994" height="593" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
       </div>
     </div>
 
