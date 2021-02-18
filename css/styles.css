@@ -219,7 +219,8 @@ a:active { opacity: var(--opacity-more); }
   margin: 0 auto;
   padding: 0 20px;
 }
-.index {
+.index,
+.catalog {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
@@ -512,6 +513,15 @@ a:active { opacity: var(--opacity-more); }
 /* ==================================================================
   CATALOG Page
 ===================================================================== */
+.catalog-main {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  grid-template-rows: auto auto 1fr;
+}
+.catalog-lead {
+  grid-column: 1 / -1;
+  margin-bottom: 50px;
+}
 .catalog-title { letter-spacing: normal; }
 .filter-title,
 .sorting-title {
@@ -534,8 +544,17 @@ a:active { opacity: var(--opacity-more); }
 
 /* FILTER
 ------------------------------------ */
-.filter { background-color: var(--grey-light); }
-.filter-title { background-color: #dcdcdc; }
+.filter {
+  grid-row: 2 / -1;
+  grid-column: 1 / 2;
+  padding-left: 60px;
+  padding-right: 68px;
+  background-color: var(--grey-light);
+}
+.filter-title {
+  padding: 25px 0;
+  background-color: #dcdcdc;
+}
 .filter-groupTitle {
   font-family: var(--font-theme);
   font-weight: var(--fontWeight-extraBold);
@@ -587,6 +606,13 @@ a:active { opacity: var(--opacity-more); }
 
 /* SORTING
 ------------------------------------ */
+.sorting {
+  grid-row: 2 / 3;
+  grid-column: 2 / -1;
+  display: flex;
+  padding: 25px 0 25px 72px;
+  background-color: var(--grey-light);
+}
 /* By TYPE */
 .sortType-input + label {
   font-size: var(--fontSize-sm);
@@ -613,8 +639,20 @@ a:active { opacity: var(--opacity-more); }
   opacity: 1;
 }
 
-/* GOODS
+/* OFFERS
 ------------------------------------ */
+.offers {
+  grid-row: 3 / 4;
+  grid-column: 2 / -1;
+  padding: 68px 0 78px 72px;
+}
+/* GOODS */
+.goods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px var(--gap);
+  margin-bottom: 40px;
+}
 .goods-link {
   font-family: var(--font-theme);
   font-size: var(--fontSize-lg);
@@ -655,7 +693,11 @@ a:active { opacity: var(--opacity-more); }
 }
 
 /* PAGINATION */
-.pagination { background-color: #ebebeb; }
+.pagination {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  background-color: #ebebeb;
+}
 .pagination-prev,
 .pagination-next,
 .pagination-page {
