@@ -186,16 +186,14 @@
         <div class="header-logo"><svg width="163" height="35"><use xlink:href="#logo"/></svg></div>
 
         <ul class="header-user user">
-          <li class="user-item user-itemSerch">
+          <li class="user-item user-itemSearch">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <input id="searchField" class="search-input" type="search" name="searchField" minlength="2" placeholder="Поиск по сайту" required>
-              <label for="searchField">
-                <svg class="search-icon" width="16" height="16"><use xlink:href="#icons--search"/></svg>
-              </label>
+              <label for="searchField"><svg class="search-icon" width="16" height="16"><use xlink:href="#icons--search"/></svg></label>
               <button class="search-btn" type="submit">Найти</button>
             </form>
           </li>
-          <li class="user-item">
+          <li class="user-item user-login">
             <a class="user-link" href="#">
               <svg class="user-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
               Войти
@@ -207,7 +205,7 @@
               Сравнить
             </a>
           </li>
-          <li class="user-item">
+          <li class="user-item user-item--last">
             <a class="user-link" href="#">
               <svg class="user-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
               Корзина
@@ -217,23 +215,35 @@
 
         <nav class="header-nav nav">
           <ul class="nav-list">
-            <li>
-              <a class="nav-link" href="catalog.html">
+            <li class="nav-item nav-catalog">
+              <a class="nav-link nav-catalogLink" href="catalog.html">
                 Каталог товаров
                 <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
               </a>
               <ul class="nav-subList">
-                <li><a class="nav-subLink" href="catalog.html">Виртуальная реальность</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Фитнес-браслеты</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Квадрокоптер</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Моноподы для селфи</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Умные часы</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Экшн-камеры</a></li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Виртуальная реальность</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Фитнес-браслеты</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Квадрокоптер</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Умные часы</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Экшн-камеры</a>
+                </li>
               </ul>
             </li>
-            <li><a class="nav-link" href="#">Доставка</a></li>
-            <li><a class="nav-link" href="#">Гарантия</a></li>
-            <li><a class="nav-link" href="#">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+            <li class="nav-item nav-warranty"><a class="nav-link" href="#">Гарантия</a></li>
+            <li class="nav-item nav-item--last"><a class="nav-link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </header>
@@ -265,12 +275,18 @@
             <p class="promo-txt">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="promo-link btn" href="catalog.html">Подробнее</a>
             <dl class="promo-spec">
-              <dt class="promo-dt">Длина палки</dt>
-              <dd class="promo-dd">8,5 м</dd>
-              <dt class="promo-dt">Вес палки</dt>
-              <dd class="promo-dd">5 кг</dd>
-              <dt class="promo-dt">Материл</dt>
-              <dd class="promo-dd">Карбон</dd>
+              <div class="promo-specGroup">
+                <dt class="promo-dt">Длина палки</dt>
+                <dd class="promo-dd">8,5 м</dd>
+              </div>
+              <div class="promo-specGroup">
+                <dt class="promo-dt">Вес палки</dt>
+                <dd class="promo-dd">5 кг</dd>
+              </div>
+              <div class="promo-specGroup promo-specGroup--last">
+                <dt class="promo-dt">Материл</dt>
+                <dd class="promo-dd">Карбон</dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -282,8 +298,10 @@
             <p class="promo-txt">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="promo-link btn" href="catalog.html">Подробнее</a>
             <dl class="promo-spec">
-              <dt class="promo-dt">Без подзарядки</dt>
-              <dd class="promo-dd">48 часов</dd>
+              <div class="promo-specGroup">
+                <dt class="promo-dt">Без подзарядки</dt>
+                <dd class="promo-dd">48 часов</dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -295,10 +313,14 @@
             <p class="promo-txt">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="promo-link btn" href="catalog.html">Подробнее</a>
             <dl class="promo-spec">
-              <dt class="promo-dt">Дальность полета</dt>
-              <dd class="promo-dd">800 м</dd>
-              <dt class="promo-dt">Радиус поражения</dt>
-              <dd class="promo-dd">50 м</dd>
+              <div class="promo-specGroup">
+                <dt class="promo-dt">Дальность полета</dt>
+                <dd class="promo-dd">800 м</dd>
+              </div>
+              <div class="promo-specGroup">
+                <dt class="promo-dt">Радиус поражения</dt>
+                <dd class="promo-dd">50 м</dd>
+              </div>
             </dl>
           </div>
         </div>
@@ -307,37 +329,49 @@
       <ul class="categories layoutCenter">
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
-            <svg class="categories-icon" width="97" height="55"><use xlink:href="#categories--glasses"/></svg>
+            <div class="categories-iconBox">
+              <svg class="categories-icon" width="97" height="55"><use xlink:href="#categories--glasses"/></svg>
+            </div>
             <span class="categories-txt">Виртуальная реальность</span>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
-            <svg class="categories-icon" width="86" height="117"><use xlink:href="#categories--monopod"/></svg>
+            <div class="categories-iconBox">
+              <svg class="categories-icon" width="86" height="117"><use xlink:href="#categories--monopod"/></svg>
+            </div>
             <span class="categories-txt">Моноподы <br> для селфи</span>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
-            <svg class="categories-icon" width="71" height="87"><use xlink:href="#categories--camera"/></svg>
+            <div class="categories-iconBox">
+              <svg class="categories-icon" width="71" height="87"><use xlink:href="#categories--camera"/></svg>
+            </div>
             <span class="categories-txt">Экшн-камеры</span>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
-            <svg class="categories-icon" width="107" height="65"><use xlink:href="#categories--bracelet"/></svg>
-            <span>Фитнес-браслеты</span>
+            <div class="categories-iconBox">
+              <svg class="categories-icon" width="107" height="65"><use xlink:href="#categories--bracelet"/></svg>
+            </div>
+            <span class="categories-txt">Фитнес-браслеты</span>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
-            <svg class="categories-icon" width="56" height="98"><use xlink:href="#categories--watch"/></svg>
+            <div class="categories-iconBox">
+              <svg class="categories-icon" width="56" height="98"><use xlink:href="#categories--watch"/></svg>
+            </div>
             <span class="categories-txt">Умные часы</span>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">
-            <svg class="categories-icon" width="132" height="69"><use xlink:href="#categories--drone"/></svg>
+            <div class="categories-iconBox">
+              <svg class="categories-icon" width="132" height="69"><use xlink:href="#categories--drone"/></svg>
+            </div>
             <span class="categories-txt">Квадрокоптеры</span>
           </a>
         </li>
@@ -346,9 +380,9 @@
       <div class="services--bg">
         <section class="services layoutCenter">
           <ul class="services-tabs">
-            <li><a class="services-tab btn" href="#">Доставка</a></li>
-            <li><a class="services-tab btn" href="#">Гарантия</a></li>
-            <li><a class="services-tab btn" href="#">Кредит</a></li>
+            <li class="services-tabItem"><a class="services-tab btn" href="#">Доставка</a></li>
+            <li class="services-tabItem"><a class="services-tab btn" href="#">Гарантия</a></li>
+            <li class="services-tabItem"><a class="services-tab btn" href="#">Кредит</a></li>
           </ul>
           <div class="services-content">
             <div class="services-desc">
@@ -395,22 +429,26 @@
 
       <div class="info layoutCenter">
         <section class="about">
-          <h2 class="about-title title title--custom">О нас</h2>
-          <p class="about-txt">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="about-txt">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="about-list">
-            <li class="about-item">Деловые линии</li>
-            <li class="about-item">Автотрейдинг</li>
-            <li class="about-item">ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="aboout-btn btn" href="#">Подробнее о нас</a>
+          <div class="about-content">
+            <h2 class="about-title title title--custom">О нас</h2>
+            <p class="about-txt">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="about-txt about-txt--2">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="about-list">
+              <li class="about-item">Деловые линии</li>
+              <li class="about-item">Автотрейдинг</li>
+              <li class="about-item">ЖелДорЭкспедиция</li>
+            </ul>
+          </div>
+          <a class="about-btn btn" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <h2 class="contacts-title title title--custom">Контакты</h2>
-          <p class="contacts-txt">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts-link" href="#">
-            <img class="contacts-img" src="img/map--sm.jpg" width="560" height="222" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
-          </a>
+          <div class="contacts-content">
+            <h2 class="contacts-title title title--custom">Контакты</h2>
+            <p class="contacts-txt">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <a class="contacts-link" href="#">
+              <img class="contacts-img" src="img/map--sm.jpg" width="560" height="222" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
+            </a>
+          </div>
           <a class="contacts-btn btn" href="№">Напишите нам</a>
         </section>
       </div>
@@ -419,18 +457,23 @@
     <div class="footer--bg">
       <footer class="footer layoutCenter">
         <div class="footer-left">
-          <div class="footer-logo">
-            <svg width="163" height="35"><use xlink:href="#logo"/></svg>
-          </div>
+          <div class="footer-logo"><svg width="163" height="35"><use xlink:href="#logo"/></svg></div>
           <address class="footer-address">
-            <a class="footer-addressLink" href="#">г. Москва, ул. Строителей, 15</a></address>
+            <a class="footer-addressLink" href="#">г. Москва, ул. Строителей, 15</a>
+          </address>
         </div>
 
         <div class="footer-center">
           <ul class="footer-nav footerNav">
-            <li><a class="footerNav-link" href="#">Доставка</a></li>
-            <li><a class="footerNav-link" href="#">Гарантия</a></li>
-            <li><a class="footerNav-link" href="#">Контакты</a></li>
+            <li class="footerNav-item">
+              <a class="footerNav-link" href="#">Доставка</a>
+            </li>
+            <li class="footerNav-item">
+              <a class="footerNav-link" href="#">Гарантия</a>
+            </li>
+            <li class="footerNav-item">
+              <a class="footerNav-link" href="#">Контакты</a>
+            </li>
           </ul>
           <ul class="footer-socials socials">
             <li class="socials-item">
@@ -453,19 +496,19 @@
 
         <div class="footer-right">
           <ul class="footer-user footerUser">
-            <li>
+            <li class="footerUser-item">
               <a class="footerUser-link" href="#">
                 <svg class="footerUser-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
                 Войти
               </a>
             </li>
-            <li>
+            <li class="footerUser-item">
               <a class="footerUser-link" href="#">
                 <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--chart"/></svg>
                 Сравнить
               </a>
             </li>
-            <li>
+            <li class="footerUser-item footerUser-item--last">
               <a class="footerUser-link" href="#">
                 <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
                 Корзина
@@ -494,7 +537,7 @@
         </div>
         <div class="msgForm-inputGroup msgForm-textarea">
           <label class="msgForm-label" for="message">Текст письма:</label>
-          <textarea class="msgForm-field msgForm-textarea" id="message" name="message" cols="30" rows="10" minlength="20" placeholder="В свободной форме" required></textarea>
+          <textarea class="msgForm-field msgForm-fieldTextarea" id="message" name="message" cols="30" rows="10" minlength="20" placeholder="В свободной форме" required></textarea>
         </div>
         <button class="msgForm-btnSubmit btn" type="submit">Отправить</button>
         <button class="msgForm-btnClose btnClose" type="button" title="Закрыть">
