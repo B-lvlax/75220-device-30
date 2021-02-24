@@ -15,7 +15,6 @@
   </head>
 
   <body class="catalog">
-
     <svg width="0" height="0" style="position:absolute">
       <symbol fill="none" viewBox="0 0 10 10" id="icons--cart" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#aclip1)" fill="currentColor">
@@ -83,6 +82,7 @@
       </symbol>
     </svg>
 
+
     <div class="layoutCenter">
       <header class="header">
         <div class="header-logo">
@@ -90,16 +90,14 @@
         </div>
 
         <ul class="header-user user">
-          <li class="user-item user-itemSerch">
+          <li class="user-item user-itemSearch">
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <input id="searchField" class="search-input" type="search" name="searchField" minlength="2" placeholder="Поиск по сайту" required>
-              <label for="searchField">
-                <svg class="search-icon" width="16" height="16"><use xlink:href="#icons--search"/></svg>
-              </label>
+              <label class="search-label" for="searchField"><svg class="search-icon" width="16" height="16"><use xlink:href="#icons--search"/></svg></label>
               <button class="search-btn" type="submit">Найти</button>
             </form>
           </li>
-          <li class="user-item">
+          <li class="user-item user-login">
             <a class="user-link" href="#">
               <svg class="user-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
               Войти
@@ -111,7 +109,7 @@
               Сравнить
             </a>
           </li>
-          <li class="user-item">
+          <li class="user-item user-item--last">
             <a class="user-link" href="#">
               <svg class="user-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
               Корзина
@@ -121,27 +119,40 @@
 
         <nav class="header-nav nav">
           <ul class="nav-list">
-            <li>
-              <a class="nav-link" href="catalog.html">
+            <li class="nav-item nav-catalog">
+              <a class="nav-link nav-catalogLink" href="catalog.html">
                 Каталог товаров
                 <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
               </a>
               <ul class="nav-subList">
-                <li><a class="nav-subLink" href="catalog.html">Виртуальная реальность</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Фитнес-браслеты</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Квадрокоптер</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Моноподы для селфи</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Умные часы</a></li>
-                <li><a class="nav-subLink" href="catalog.html">Экшн-камеры</a></li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Виртуальная реальность</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Фитнес-браслеты</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Квадрокоптер</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="nav-subItem">
+                  <a class="nav-subLink" href="catalog.html">Умные часы</a>
+                </li>
+                <li class="nav-subItem nav-subItem--last">
+                  <a class="nav-subLink" href="catalog.html">Экшн-камеры</a>
+                </li>
               </ul>
             </li>
-            <li><a class="nav-link" href="#">Доставка</a></li>
-            <li><a class="nav-link" href="#">Гарантия</a></li>
-            <li><a class="nav-link" href="#">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
+            <li class="nav-item nav-warranty"><a class="nav-link" href="#">Гарантия</a></li>
+            <li class="nav-item nav-item--last"><a class="nav-link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </header>
     </div>
+
 
     <main class="catalog-main layoutCenter">
       <div class="catalog-lead">
@@ -153,7 +164,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
-          <li class="breadcrumbs-item">
+          <li class="breadcrumbs-item breadcrumbs-item--last">
             <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
@@ -195,13 +206,13 @@
               <label class="filter-label" for="rose">Розовый</label>
             </div>
           </fieldset>
-          <fieldset class="filter-group">
+          <fieldset class="filter-group filter-group--last">
             <legend class="filter-groupTitle">Bluetooth</legend>
-            <div>
+            <div class="filter-inputGroup">
               <input class="filter-input filter-input--radio" type="radio" id="btY" name="bluetooth" value="yes" checked>
               <label class="filter-label" for="btY">Есть</label>
             </div>
-            <div>
+            <div class="filter-inputGroup">
               <input class="filter-input filter-input--radio" type="radio" id="btN" name="bluetooth" value="no">
               <label class="filter-label" for="btN">Нет</label>
             </div>
@@ -226,17 +237,17 @@
             <label for="popular">По популярности</label>
           </div>
         </div>
-        <div class="sorting-order">
-          <div class="order-inputGroup">
-            <input class="order-input" type="radio" id="orderA" name="sort2">
+        <div class="sorting-order sortOrder">
+          <div class="sortOrder-inputGroup sortOrder-inputGroup--first">
+            <input class="sortOrder-input" type="radio" id="orderA" name="sort2">
             <label for="orderA" title="По возростанию">
-              <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--up"/></svg>
+              <svg width="22" height="22"><use xlink:href="#icons--up"/></svg>
             </label>
           </div>
-          <div class="order-inputGroup">
-            <input class="order-input" type="radio" id="orderD" name="sort2" checked>
+          <div class="sortOrder-inputGroup">
+            <input class="sortOrder-input" type="radio" id="orderD" name="sort2" checked>
             <label for="orderD" title="По убыванию">
-              <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--down"/></svg>
+              <svg width="22" height="22"><use xlink:href="#icons--down"/></svg>
             </label>
           </div>
         </div>
@@ -258,7 +269,7 @@
           <div class="goods-item">
             <img class="goods-img" src="img/goods/monopod-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <div class="goods-desc">
-              <a class="goods-link" href="#">Профессиональная селфи-палка</a>
+              <a class="goods-link" href="#">Профессиональная <br> селфи-палка</a>
               <span class="goods-price">1500 руб.</span>
             </div>
             <div class="goods-actions">
@@ -269,7 +280,7 @@
           <div class="goods-item">
             <img class="goods-img" src="img/goods/monopod-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <div class="goods-desc">
-              <a class="goods-link" href="#">Непотопляемая селфи-палка</a>
+              <a class="goods-link" href="#">Непотопляемая <br> селфи-палка</a>
               <span class="goods-price">1500 руб.</span>
             </div>
             <div class="goods-actions">
@@ -303,21 +314,27 @@
       </div>
     </main>
 
+
     <div class="footer--bg">
       <footer class="footer layoutCenter">
         <div class="footer-left">
-          <div class="footer-logo">
-            <a class="footer-logoLink" href="index.html" title="На главную магазина Device"><svg width="163" height="35"><use xlink:href="#logo"/></svg></a>
-          </div>
+          <div class="footer-logo"><svg width="163" height="35"><use xlink:href="#logo"/></svg></div>
           <address class="footer-address">
-            <a class="footer-addressLink" href="#">г. Москва, ул. Строителей, 15</a></address>
+            <a class="footer-addressLink" href="#">г. Москва, ул. Строителей, 15</a>
+          </address>
         </div>
 
         <div class="footer-center">
           <ul class="footer-nav footerNav">
-            <li><a class="footerNav-link" href="#">Доставка</a></li>
-            <li><a class="footerNav-link" href="#">Гарантия</a></li>
-            <li><a class="footerNav-link" href="#">Контакты</a></li>
+            <li class="footerNav-item">
+              <a class="footerNav-link" href="#">Доставка</a>
+            </li>
+            <li class="footerNav-item">
+              <a class="footerNav-link" href="#">Гарантия</a>
+            </li>
+            <li class="footerNav-item">
+              <a class="footerNav-link" href="#">Контакты</a>
+            </li>
           </ul>
           <ul class="footer-socials socials">
             <li class="socials-item">
@@ -340,19 +357,19 @@
 
         <div class="footer-right">
           <ul class="footer-user footerUser">
-            <li>
+            <li class="footerUser-item">
               <a class="footerUser-link" href="#">
                 <svg class="footerUser-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
                 Войти
               </a>
             </li>
-            <li>
+            <li class="footerUser-item">
               <a class="footerUser-link" href="#">
                 <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--chart"/></svg>
                 Сравнить
               </a>
             </li>
-            <li>
+            <li class="footerUser-item footerUser-item--last">
               <a class="footerUser-link" href="#">
                 <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
                 Корзина
@@ -369,6 +386,7 @@
       </footer>
     </div>
 
+
     <div class="modals layoutCenter">
       <form class="modals-msgForm msgForm" action="https://echo.htmlacademy.ru" method="post">
         <div class="msgForm-inputGroup">
@@ -381,7 +399,7 @@
         </div>
         <div class="msgForm-inputGroup msgForm-textarea">
           <label class="msgForm-label" for="message">Текст письма:</label>
-          <textarea class="msgForm-field msgForm-textarea" id="message" name="message" cols="30" rows="10" minlength="20" placeholder="В свободной форме" required></textarea>
+          <textarea class="msgForm-field msgForm-fieldTextarea" id="message" name="message" cols="30" rows="10" minlength="20" placeholder="В свободной форме" required></textarea>
         </div>
         <button class="msgForm-btnSubmit btn" type="submit">Отправить</button>
         <button class="msgForm-btnClose btnClose" type="button" title="Закрыть">
