@@ -98,10 +98,11 @@
             </form>
           </li>
           <li class="user-item user-login">
-            <a class="user-link" href="#">
+            <a class="user-link user-userLogged" href="#">
               <svg class="user-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
-              Войти
+              Валентин Петухов
             </a>
+            <a class="user-logout" href="#">Выйти</a>
           </li>
           <li class="user-item">
             <a class="user-link" href="#">
@@ -317,71 +318,77 @@
 
     <div class="footer--bg">
       <footer class="footer layoutCenter">
-        <div class="footer-left">
-          <div class="footer-logo"><svg width="163" height="35"><use xlink:href="#logo"/></svg></div>
+        <div class="footer-logo"><svg width="163" height="35"><use xlink:href="#logo"/></svg></div>
+
+        <ul class="footer-user footerUser">
+          <li class="footerUser-item">
+            <a class="footerUser-link footerUser-userLogged" href="#">
+              <svg class="footerUser-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
+              Валентин Петухов
+            </a>
+            <a class="footerUser-link footerUser-logout" href="#">Выйти</a>
+          </li>
+          <li class="footerUser-item">
+            <a class="footerUser-link" href="#">
+              <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--chart"/></svg>
+              Сравнить
+            </a>
+          </li>
+          <li class="footerUser-item footerUser-item--last">
+            <a class="footerUser-link" href="#">
+              <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
+              Корзина
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer-info">
           <address class="footer-address">
             <a class="footer-addressLink" href="#">г. Москва, ул. Строителей, 15</a>
           </address>
-        </div>
 
-        <div class="footer-center">
-          <ul class="footer-nav footerNav">
-            <li class="footerNav-item">
-              <a class="footerNav-link" href="#">Доставка</a>
-            </li>
-            <li class="footerNav-item">
-              <a class="footerNav-link" href="#">Гарантия</a>
-            </li>
-            <li class="footerNav-item">
-              <a class="footerNav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <ul class="footer-socials socials">
-            <li class="socials-item">
-              <a class="socials-link" href="#" target="_blank" title="Мы в Facebook">
-                <svg width="32" height="32"><use xlink:href="#socials--facebook"/></svg>
-                <span>Facebook</span></a>
-            </li>
-            <li class="socials-item">
-              <a class="socials-link" href="#" target="_blank" title="Мы в Instagram">
-                <svg width="32" height="32"><use xlink:href="#socials--instagram"/></svg>
-                <span>Instagram</span></a>
-            </li>
-            <li class="socials-item">
-              <a class="socials-link" href="#" target="_blank" title="Мы в Twitter">
-                <svg width="32" height="32"><use xlink:href="#socials--twitter"/></svg>
-                <span>Twitter</span></a>
-            </li>
-          </ul>
-        </div>
+          <div class="footer-infoCenter">
+            <ul class="footer-nav footerNav">
+              <li class="footerNav-item">
+                <a class="footerNav-link" href="#">Доставка</a>
+              </li>
+              <li class="footerNav-item">
+                <a class="footerNav-link" href="#">Гарантия</a>
+              </li>
+              <li class="footerNav-item">
+                <a class="footerNav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="footer-socials socials">
+              <li class="socials-item">
+                <a class="socials-link" href="#" target="_blank" title="Мы в Facebook">
+                  <svg width="32" height="32"><use xlink:href="#socials--facebook"/></svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a class="socials-link" href="#" target="_blank" title="Мы в Instagram">
+                  <svg width="32" height="32"><use xlink:href="#socials--instagram"/></svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a class="socials-link" href="#" target="_blank" title="Мы в Twitter">
+                  <svg width="32" height="32"><use xlink:href="#socials--twitter"/></svg>
+                  <span>Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="footer-right">
-          <ul class="footer-user footerUser">
-            <li class="footerUser-item">
-              <a class="footerUser-link" href="#">
-                <svg class="footerUser-icon" width="13" height="14"><use xlink:href="#icons--user"/></svg>
-                Войти
-              </a>
-            </li>
-            <li class="footerUser-item">
-              <a class="footerUser-link" href="#">
-                <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--chart"/></svg>
-                Сравнить
-              </a>
-            </li>
-            <li class="footerUser-item footerUser-item--last">
-              <a class="footerUser-link" href="#">
-                <svg class="footerUser-icon" width="10" height="10"><use xlink:href="#icons--cart"/></svg>
-                Корзина
-              </a>
-            </li>
-          </ul>
-          <address class="footer-tel">
-            <a class="footer-telLink" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-          </address>
-          <a class="footer-htmlLink" href="https://htmlacademy.ru/intensive/htmlcss"  target="_blank" title="HTML и CSS. Профессиональная вёрстка сайтов">
-            <svg width="27" height="34"><use xlink:href="#logo-ha"/></svg>
-          </a>
+          <div class="footer-infoRight">
+            <address class="footer-tel">
+              <a class="footer-telLink" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+            </address>
+            <a class="footer-htmlLink" href="https://htmlacademy.ru/intensive/htmlcss"  target="_blank" title="HTML и CSS. Профессиональная вёрстка сайтов">
+              <svg width="27" height="34"><use xlink:href="#logo-ha"/></svg>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
