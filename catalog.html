@@ -123,7 +123,7 @@
             <li class="nav-item nav-catalog">
               <a class="nav-link nav-catalogLink" href="catalog.html">
                 Каталог товаров
-                <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
+                <svg class="nav-catalogIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
               </a>
               <ul class="nav-subList">
                 <li class="nav-subItem">
@@ -161,9 +161,11 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <svg class="breadcrumbs-icon" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.147491 5.94246L2.43749 3.64746L0.147491 1.35246L0.852491 0.647461L3.85249 3.64746L0.852491 6.64746L0.147491 5.94246Z" fill="black"/></svg>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+            <svg class="breadcrumbs-icon" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.147491 5.94246L2.43749 3.64746L0.147491 1.35246L0.852491 0.647461L3.85249 3.64746L0.852491 6.64746L0.147491 5.94246Z" fill="black"/></svg>
           </li>
           <li class="breadcrumbs-item breadcrumbs-item--last">
             <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
@@ -176,12 +178,15 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-group costRange">
             <legend class="filter-groupTitle">Стоимость</legend>
-            <div class="costRange-range"><span class="costRange-activeRange"></span></div>
-            <span class="costRange-minBtn"></span>
-            <span class="costRange-maxBtn"></span>
+            <div class="costRange-controls">
+              <div class="costRange-bar"></div>
+              <div class="costRange-activeLine"></div>
+              <div class="costRange-minBtn" tabindex="0" style=""></div>
+              <div class="costRange-maxBtn" tabindex="0" style=""></div>
+            </div>
             <div class="costRange-result">
-              <span>от <span>0</span></span>
-              <span>до <span>5000</span></span>
+              <div class="costRange-minResult">от <span>0</span></div>
+              <div class="costRange-maxResult">до <span>5000</span></div>
             </div>
           </fieldset>
           <fieldset class="filter-group">
@@ -218,7 +223,7 @@
               <label class="filter-label" for="btN">Нет</label>
             </div>
           </fieldset>
-          <button class="btn" type="submit">Показать</button>
+          <button class="filter-btn btn" type="submit">Показать</button>
         </form>
       </section>
 
@@ -304,7 +309,7 @@
         </div>
 
         <div class="pagination">
-          <a class="pagination-prev" href="#">Назад</a>
+          <a class="pagination-prev disabled" href="#">Назад</a>
           <ol class="pagination-list">
             <li class="pagination-item"><a class="pagination-page active" href="#">1</a></li>
             <li class="pagination-item"><a class="pagination-page" href="#">2</a></li>
@@ -318,7 +323,9 @@
 
     <div class="footer--bg">
       <footer class="footer layoutCenter">
-        <div class="footer-logo"><svg width="163" height="35"><use xlink:href="#logo"/></svg></div>
+        <div class="footer-logo">
+          <a class="footer-logoLink" href="index.html"><svg width="163" height="35"><use xlink:href="#logo"/></svg></a>
+        </div>
 
         <ul class="footer-user footerUser">
           <li class="footerUser-item">
@@ -363,19 +370,19 @@
               <li class="socials-item">
                 <a class="socials-link" href="#" target="_blank" title="Мы в Facebook">
                   <svg width="32" height="32"><use xlink:href="#socials--facebook"/></svg>
-                  <span>Facebook</span>
+                  <span class="hidden">Facebook</span>
                 </a>
               </li>
               <li class="socials-item">
                 <a class="socials-link" href="#" target="_blank" title="Мы в Instagram">
                   <svg width="32" height="32"><use xlink:href="#socials--instagram"/></svg>
-                  <span>Instagram</span>
+                  <span class="hidden">Instagram</span>
                 </a>
               </li>
               <li class="socials-item">
                 <a class="socials-link" href="#" target="_blank" title="Мы в Twitter">
                   <svg width="32" height="32"><use xlink:href="#socials--twitter"/></svg>
-                  <span>Twitter</span>
+                  <span class="hidden">Twitter</span>
                 </a>
               </li>
             </ul>
@@ -411,14 +418,14 @@
         <button class="msgForm-btnSubmit btn" type="submit">Отправить</button>
         <button class="msgForm-btnClose btnClose" type="button" title="Закрыть">
           <svg width="30" height="30"><use xlink:href="#icons--cross"/></svg>
-          <span>Закрыть</span>
+          <span class="hidden">Закрыть</span>
         </button>
       </form>
 
       <div class="modals-map map">
         <button class="btnClose" type="button" title="Закрыть">
           <svg width="30" height="30"><use xlink:href="#icons--cross"/></svg>
-          <span>Закрыть</span>
+          <span class="hidden">Закрыть</span>
         </button>
         <img class="map-img" src="img/map--lg.jpg" width="994" height="593" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
       </div>

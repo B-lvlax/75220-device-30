@@ -254,27 +254,24 @@
       <h1 class="layoutCenter hidden">Device - магазин гаджетов</h1>
 
       <div class="promo layoutCenter">
-        <ul class="promo-controls">
-          <li class="promo-inputGroup">
-            <input class="promo-input" id="sliderToggle-1" type="radio" name="sliderToggle" checked>
-            <label class="promo-label" for="sliderToggle-1"><span class="hidden">Слайд 1</span></label>
-          </li>
-          <li class="promo-inputGroup">
-            <input class="promo-input" id="sliderToggle-2" type="radio" name="sliderToggle">
-            <label class="promo-label" for="sliderToggle-2"><span class="hidden">Слайд 2</span></label>
-          </li>
-          <li class="promo-inputGroup">
-            <input class="promo-input" id="sliderToggle-3" type="radio" name="sliderToggle">
-            <label class="promo-label" for="sliderToggle-3"><span class="hidden">Слайд 3</span></label>
-          </li>
-        </ul>
-        <div class="promo-slide active">
+        <input class="promo-input promo-input--1" id="sliderToggle-1" type="radio" name="sliderToggle" checked>
+        <input class="promo-input promo-input--2" id="sliderToggle-2" type="radio" name="sliderToggle">
+        <input class="promo-input promo-input--3" id="sliderToggle-3" type="radio" name="sliderToggle">
+
+        <div class="promo-slide promo-slide--1">
           <img class="promo-img" src="img/promo/monopod.png" width="384" height="486" alt="Палка для селфи">
           <div class="promo-desc">
             <span class="promo-num">01</span>
             <div class="promo-title title title--custom">Делай селфи, <br> как Бен Стиллер!</div>
             <p class="promo-txt">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="promo-link btn" href="catalog.html">Подробнее</a>
+            <div class="promo-actions">
+              <a class="promo-link btn" href="catalog.html">Подробнее</a>
+              <div class="promo-controls">
+                <label class="promo-label promo-label--1" for="sliderToggle-1" title="Слайд 1" tabindex="0"></label>
+                <label class="promo-label promo-label--2" for="sliderToggle-2" title="Слайд 2" tabindex="0"></label>
+                <label class="promo-label promo-label--3" for="sliderToggle-3" title="Слайд 3" tabindex="0"></label>
+              </div>
+            </div>
             <dl class="promo-spec">
               <div class="promo-specGroup">
                 <dt class="promo-dt">Длина палки</dt>
@@ -291,13 +288,20 @@
             </dl>
           </div>
         </div>
-        <div class="promo-slide">
+        <div class="promo-slide promo-slide--2">
           <img class="promo-img" src="img/promo/bracelet.png" width="345" height="485" alt="Фитнес-браслет">
           <div class="promo-desc">
             <span class="promo-num">02</span>
             <div class="promo-title title title--custom">Худеем <br> правильно!</div>
             <p class="promo-txt">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="promo-link btn" href="catalog.html">Подробнее</a>
+            <div class="promo-actions">
+              <a class="promo-link btn" href="catalog.html">Подробнее</a>
+              <div class="promo-controls">
+                <label class="promo-label promo-label--1" for="sliderToggle-1" title="Слайд 1" tabindex="0"></label>
+                <label class="promo-label promo-label--2" for="sliderToggle-2" title="Слайд 2" tabindex="0"></label>
+                <label class="promo-label promo-label--3" for="sliderToggle-3" title="Слайд 3" tabindex="0"></label>
+              </div>
+            </div>
             <dl class="promo-spec">
               <div class="promo-specGroup">
                 <dt class="promo-dt">Без подзарядки</dt>
@@ -306,13 +310,20 @@
             </dl>
           </div>
         </div>
-        <div class="promo-slide">
+        <div class="promo-slide promo-slide--3">
           <img class="promo-img" src="img/promo/drone.png" width="526" height="334" alt="Квадрокоптер">
           <div class="promo-desc">
             <span class="promo-num">03</span>
             <div class="promo-title title title--custom">Порхает как бабочка, жалит как пчела!</div>
             <p class="promo-txt">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="promo-link btn" href="catalog.html">Подробнее</a>
+            <div class="promo-actions">
+              <a class="promo-link btn" href="catalog.html">Подробнее</a>
+              <div class="promo-controls">
+                <label class="promo-label promo-label--1" for="sliderToggle-1" title="Слайд 1" tabindex="0"></label>
+                <label class="promo-label promo-label--2" for="sliderToggle-2" title="Слайд 2" tabindex="0"></label>
+                <label class="promo-label promo-label--3" for="sliderToggle-3" title="Слайд 3" tabindex="0"></label>
+              </div>
+            </div>
             <dl class="promo-spec">
               <div class="promo-specGroup">
                 <dt class="promo-dt">Дальность полета</dt>
