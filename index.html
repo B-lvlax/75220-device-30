@@ -218,7 +218,7 @@
             <li class="nav-item nav-catalog">
               <a class="nav-link nav-catalogLink" href="catalog.html">
                 Каталог товаров
-                <svg class="nav-categoryIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
+                <svg class="nav-catalogIcon" width="22" height="22"><use xlink:href="#icons--plus"/></svg>
               </a>
               <ul class="nav-subList">
                 <li class="nav-subItem">
@@ -251,24 +251,24 @@
 
 
     <main class="index-main main">
-      <h1 class="layoutCenter">Device - магазин гаджетов</h1>
+      <h1 class="layoutCenter hidden">Device - магазин гаджетов</h1>
 
       <div class="promo layoutCenter">
         <ul class="promo-controls">
           <li class="promo-inputGroup">
-            <input id="sliderToggle-1" type="radio" name="sliderToggle" checked>
-            <label for="sliderToggle-1"><span>Слайд 1</span></label>
+            <input class="promo-input" id="sliderToggle-1" type="radio" name="sliderToggle" checked>
+            <label class="promo-label" for="sliderToggle-1"><span class="hidden">Слайд 1</span></label>
           </li>
           <li class="promo-inputGroup">
-            <input id="sliderToggle-2" type="radio" name="sliderToggle">
-            <label for="sliderToggle-2"><span>Слайд 2</span></label>
+            <input class="promo-input" id="sliderToggle-2" type="radio" name="sliderToggle">
+            <label class="promo-label" for="sliderToggle-2"><span class="hidden">Слайд 2</span></label>
           </li>
           <li class="promo-inputGroup">
-            <input id="sliderToggle-3" type="radio" name="sliderToggle">
-            <label for="sliderToggle-3"><span>Слайд 3</span></label>
+            <input class="promo-input" id="sliderToggle-3" type="radio" name="sliderToggle">
+            <label class="promo-label" for="sliderToggle-3"><span class="hidden">Слайд 3</span></label>
           </li>
         </ul>
-        <div class="promo-slide">
+        <div class="promo-slide active">
           <img class="promo-img" src="img/promo/monopod.png" width="384" height="486" alt="Палка для селфи">
           <div class="promo-desc">
             <span class="promo-num">01</span>
@@ -310,7 +310,7 @@
           <img class="promo-img" src="img/promo/drone.png" width="526" height="334" alt="Квадрокоптер">
           <div class="promo-desc">
             <span class="promo-num">03</span>
-            <div class="promo-title title title--custom">Порхает как бабочка, <br> жалит как пчела!</div>
+            <div class="promo-title title title--custom">Порхает как бабочка, жалит как пчела!</div>
             <p class="promo-txt">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="promo-link btn" href="catalog.html">Подробнее</a>
             <dl class="promo-spec">
@@ -383,7 +383,7 @@
           <ul class="services-tabs">
             <li class="services-tabItem"><a class="services-tab btn" href="#">Доставка</a></li>
             <li class="services-tabItem"><a class="services-tab btn" href="#">Гарантия</a></li>
-            <li class="services-tabItem"><a class="services-tab btn" href="#">Кредит</a></li>
+            <li class="services-tabItem"><a class="services-tab active btn" href="#">Кредит</a></li>
           </ul>
           <div class="services-content">
             <div class="services-desc">
@@ -396,7 +396,7 @@
               <p class="services-txt">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
               <svg class="services-img" width="171" height="195"><use xlink:href="#services--warranty"/></svg>
             </div>
-            <div class="services-desc">
+            <div class="services-desc active">
               <h2 class="services-title title">Кредит</h2>
               <p class="services-txt">Залезть в долговую яму стало проще! Кредитные консультанты  подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
               <svg class="services-img" width="156" height="188"><use xlink:href="#services--credit"/></svg>
@@ -502,19 +502,19 @@
               <li class="socials-item">
                 <a class="socials-link" href="#" target="_blank" title="Мы в Facebook">
                   <svg width="32" height="32"><use xlink:href="#socials--facebook"/></svg>
-                  <span>Facebook</span>
+                  <span class="hidden">Facebook</span>
                 </a>
               </li>
               <li class="socials-item">
                 <a class="socials-link" href="#" target="_blank" title="Мы в Instagram">
                   <svg width="32" height="32"><use xlink:href="#socials--instagram"/></svg>
-                  <span>Instagram</span>
+                  <span class="hidden">Instagram</span>
                 </a>
               </li>
               <li class="socials-item">
                 <a class="socials-link" href="#" target="_blank" title="Мы в Twitter">
                   <svg width="32" height="32"><use xlink:href="#socials--twitter"/></svg>
-                  <span>Twitter</span>
+                  <span class="hidden">Twitter</span>
                 </a>
               </li>
             </ul>
@@ -550,14 +550,14 @@
         <button class="msgForm-btnSubmit btn" type="submit">Отправить</button>
         <button class="msgForm-btnClose btnClose" type="button" title="Закрыть">
           <svg width="30" height="30"><use xlink:href="#icons--cross"/></svg>
-          <span>Закрыть</span>
+          <span class="hidden">Закрыть</span>
         </button>
       </form>
 
       <div class="modals-map map">
         <button class="btnClose" type="button" title="Закрыть">
           <svg width="30" height="30"><use xlink:href="#icons--cross"/></svg>
-          <span>Закрыть</span>
+          <span class="hidden">Закрыть</span>
         </button>
         <img class="map-img" src="img/map--lg.jpg" width="994" height="593" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
       </div>
