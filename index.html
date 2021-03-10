@@ -10,8 +10,8 @@
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#f7e296">
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#f7e296">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
 
   <body class="index">
@@ -241,9 +241,9 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
-            <li class="nav-item nav-warranty"><a class="nav-link" href="#">Гарантия</a></li>
-            <li class="nav-item nav-item--last"><a class="nav-link" href="#">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link" href="#toDelivery">Доставка</a></li>
+            <li class="nav-item nav-warranty"><a class="nav-link" href="#toWarranty">Гарантия</a></li>
+            <li class="nav-item nav-item--last"><a class="nav-link" href="#toContacts">Контакты</a></li>
           </ul>
         </nav>
       </header>
@@ -392,14 +392,14 @@
       <div class="services--bg">
         <section class="services layoutCenter">
           <ul class="services-tabs">
-            <li class="services-tabItem"><a class="services-tab btn" href="#">Доставка</a></li>
-            <li class="services-tabItem"><a class="services-tab btn" href="#">Гарантия</a></li>
-            <li class="services-tabItem"><a class="services-tab active btn" href="#">Кредит</a></li>
+            <li id="toDelivery" class="services-tabItem"><a class="services-tab btn active" href="#">Доставка</a></li>
+            <li id="toWarranty" class="services-tabItem"><a class="services-tab btn" href="#">Гарантия</a></li>
+            <li class="services-tabItem"><a class="services-tab btn" href="#">Кредит</a></li>
           </ul>
           <div class="services-content">
-            <div class="services-desc">
+            <div class="services-desc active">
               <h2 class="services-title title">Доставка</h2>
-              <p class="services-txt">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж.</p>
+              <p class="services-txt">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               <svg class="services-img" width="136" height="164"><use xlink:href="#services--delivery"/></svg>
             </div>
             <div class="services-desc">
@@ -407,7 +407,7 @@
               <p class="services-txt">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
               <svg class="services-img" width="171" height="195"><use xlink:href="#services--warranty"/></svg>
             </div>
-            <div class="services-desc active">
+            <div class="services-desc">
               <h2 class="services-title title">Кредит</h2>
               <p class="services-txt">Залезть в долговую яму стало проще! Кредитные консультанты  подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
               <svg class="services-img" width="156" height="188"><use xlink:href="#services--credit"/></svg>
@@ -453,7 +453,7 @@
           </div>
           <a class="about-btn btn" href="#">Подробнее о нас</a>
         </section>
-        <section class="contacts">
+        <section id="toContacts" class="contacts">
           <div class="contacts-content">
             <h2 class="contacts-title title title--custom">Контакты</h2>
             <p class="contacts-txt">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -571,6 +571,7 @@
           <span class="hidden">Закрыть</span>
         </button>
         <img class="map-img" src="img/map--lg.jpg" width="994" height="593" alt="Местоположение на карте по адресу Москва, улица Строителей, 15">
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548878001!2d37.5274293162872!3d55.68703098053576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20Russia%2C%20119311!5e0!3m2!1sen!2sfr!4v1615326926538!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
 

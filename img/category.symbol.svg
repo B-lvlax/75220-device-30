@@ -13,9 +13,6 @@
   <symbol fill="none" viewBox="0 0 10 10" id="icons--chart" xmlns="http://www.w3.org/2000/svg">
     <path d="M.917 3.367h1.75v5.716H.917V3.367zM4.183.917h1.634v8.166H4.183V.917zM7.45 5.583h1.633v3.5H7.45v-3.5z" fill="currentColor" />
   </symbol>
-  <symbol fill="none" viewBox="0 0 21 21" id="icons--check" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.077 8.75L3.385 10.5l5.077 5.25L16.923 7l-1.692-1.75-6.77 7-3.384-3.5z" fill="#000" />
-  </symbol>
   <symbol fill="none" viewBox="0 0 30 30" id="icons--cross" xmlns="http://www.w3.org/2000/svg">
     <path d="M22.95 24.725L15 16.762l-7.95 7.963-1.775-1.775L13.237 15 5.275 7.05 7.05 5.275 15 13.238l7.95-7.95 1.762 1.762-7.95 7.95 7.95 7.95-1.762 1.775z" fill="#fff" opacity=".7" />
   </symbol>
