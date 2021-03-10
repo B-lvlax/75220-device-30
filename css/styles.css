@@ -232,12 +232,11 @@ a:active {
   z-index: 26;
 
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   width: 55px;
   height: 55px;
 
@@ -286,9 +285,10 @@ a:active {
 .index,
 .catalog {
   display: -ms-grid;
-  display: grid;
+  display:     grid;
+  grid-template-rows: min-content 1fr min-content;
+
   -ms-grid-rows: min-content 1fr min-content;
-      grid-template-rows: min-content 1fr min-content;
 }
 
 /* HEADER
@@ -318,7 +318,7 @@ a:active {
 ------------------------------------ */
 .header-user {
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   margin-bottom: 13px;
 }
 .user-item {
@@ -350,20 +350,19 @@ a:active {
   position: relative;
 
   display: -ms-flexbox;
-
   display: flex;
 }
 .search-label {
   -ms-flex-order: 1;
-      order: 1;
+  order: 1;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   margin-right: 18px;
 }
 .search-input {
   -ms-flex-order: 2;
-      order: 2;
+  order: 2;
   width: 356px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -396,11 +395,11 @@ a:active {
   opacity: 1;
 }
 .search-input:focus + label::after {
-  width: 486px; /* widtn of all elems in search form */
+  width: 480px; /* widtn of all elems in search form */
 }
 .search-btn {
   -ms-flex-order: 3;
-      order: 3;
+  order: 3;
   padding: 15px 17px;
 
   line-height: inherit;
@@ -464,10 +463,8 @@ a:active {
   z-index: -1;
 
   display: -ms-grid;
-
-  display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  display:     grid;
+  grid-template-columns: repeat(3, auto);
   gap: 20px 40px;
   width: 100%;
   padding: 28px 47% 38px 60px;
@@ -477,6 +474,8 @@ a:active {
   opacity: 0;
 
   transition: all 0.2s 0.3s ease-in-out;
+
+  -ms-grid-columns: (auto)[3];
 }
 .nav-subItem--last {
   grid-column: 1 / -1;
@@ -502,12 +501,11 @@ a:active {
   position: relative;
 
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   padding-top: 48px;
   padding-bottom: 60px;
 
@@ -516,7 +514,7 @@ a:active {
 .footer::after {
   content: "";
   position: absolute;
-  bottom: 78px;
+  bottom: 80px;
   left: 20px;
 
   width: 80px;
@@ -542,7 +540,7 @@ a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
 }
 .footerUser-item {
   margin-right: 31px;
@@ -567,7 +565,7 @@ a:active {
   color: #ffc600;
 }
 .footerUser-userLogged {
-  margin-right: 20px;
+  margin-right: 28px;
 }
 
 /* Footer INFO
@@ -576,7 +574,7 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
 .footer-addressLink,
@@ -590,9 +588,9 @@ a:active {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   -ms-flex-align: end;
-      align-items: flex-end;
+  align-items: flex-end;
 }
 
 /* NAV */
@@ -602,7 +600,7 @@ a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin-bottom: 49px;
 }
 .footerNav-item {
@@ -625,7 +623,7 @@ a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
 }
 .socials-item {
   margin-right: 25px;
@@ -656,9 +654,9 @@ a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 
@@ -687,7 +685,7 @@ a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   max-width: 960px;
   padding: 88px 100px 62px;
 }
@@ -777,14 +775,15 @@ a:active {
 }
 .promo-slide {
   display: none;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   gap: var(--gap);
   padding: 20px 74px;
 
   background-image: linear-gradient(var(--theme-yellowLight) 143px, var(--white) 143px);
+
+  -ms-grid-columns: 1fr 1fr;
 }
 .promo-slide--3 {
   padding-right: 60px;
@@ -830,9 +829,9 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   margin-bottom: 48px;
 }
 .promo-link {
@@ -881,7 +880,7 @@ a:active {
 .promo-input--2:checked ~ .promo-slide--2,
 .promo-input--3:checked ~ .promo-slide--3 {
   display: -ms-grid;
-  display: grid;
+  display:     grid;
 }
 .promo-spec {
   display: -ms-flexbox;
@@ -894,7 +893,7 @@ a:active {
   -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
   -ms-flex-pack: end;
-      justify-content: flex-end;
+  justify-content: flex-end;
   margin-right: 58px;
 }
 .promo-specGroup--last {
@@ -918,13 +917,14 @@ a:active {
 ------------------------------------ */
 .categories {
   display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  display:     grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: var(--gap);
   margin-bottom: 57px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  -ms-grid-columns: (1fr)[6];
 }
 
 .categories-iconBox {
@@ -967,12 +967,13 @@ a:active {
 }
 .services {
   display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 284px 1fr;
-      grid-template-columns: 284px 1fr;
+  display:     grid;
+  grid-template-columns: 284px 1fr;
   gap: 116px;
   margin-bottom: 90px;
   padding-bottom: 64px;
+
+  -ms-grid-columns: 284px 1fr;
 }
 
 /* TABS */
@@ -1000,7 +1001,7 @@ a:active {
 .services-tab.active::after,
 .services-tab:active::after {
   -ms-flex-positive: 1;
-      flex-grow: 1;
+  flex-grow: 1;
   padding-left: 21px;
 
   text-align: left;
@@ -1041,11 +1042,12 @@ a:active {
 ------------------------------------ */
 .brands {
   display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  display:     grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--gap);
   margin-bottom: 87px;
+
+  -ms-grid-columns: (1fr)[4];
 }
 .brands-link {
   opacity: 0.2;
@@ -1063,11 +1065,12 @@ a:active {
 ------------------------------------ */
 .info {
   display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display:     grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--gap);
   margin-bottom: 75px;
+
+  -ms-grid-columns: 1fr 1fr;
 }
 .about,
 .contacts {
@@ -1128,20 +1131,23 @@ a:active {
 /* ==================================================================
   CATALOG Page
 ===================================================================== */
+.catalog-header {
+  padding-bottom: 27px;
+}
 .catalog-main {
   position: relative;
 
   display: -ms-grid;
+  display:     grid;
+  grid-template-columns: 330px 1fr;
+  grid-template-rows: auto auto 1fr;
 
-  display: grid;
   -ms-grid-columns: 330px 1fr;
-      grid-template-columns: 330px 1fr;
   -ms-grid-rows: auto auto 1fr;
-      grid-template-rows: auto auto 1fr;
 }
 .catalog-lead {
   grid-column: 1 / -1;
-  padding: 44px 60px 50px;
+  padding: 45px 60px 50px;
 }
 .catalog-title {
   margin-top: 0;
@@ -1153,7 +1159,7 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   margin: 0;
 
   font-weight: var(--fontWeight-extraBold);
@@ -1272,14 +1278,16 @@ a:active {
   background-color: #dcdcdc;
 }
 .filter-form {
-  padding-top: 82px;
+  padding-top: 85px;
   padding-bottom: 70px;
 }
 .filter-group {
   position: relative;
 
-  margin-bottom: var(--gap);
+  margin-bottom: 38px;
   padding: 0;
+
+  border: none;
 }
 .filter-group::before {
   content: "";
@@ -1293,7 +1301,7 @@ a:active {
   background-color: var(--black);
 }
 .filter-group--last {
-  margin-bottom: 50px;
+  margin-bottom: 28px;
 }
 .filter-groupTitle {
   margin-bottom: 30px;
@@ -1306,14 +1314,16 @@ a:active {
 }
 
 /* RANGE Slider */
+.costRange {
+  margin-bottom: 54px;
+}
 .costRange-controls {
   position: relative;
 
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   height: 20px;
   margin-bottom: 8px;
 }
@@ -1358,7 +1368,7 @@ a:active {
 }
 .costRange-minResult,
 .costRange-maxResult {
-  width: 40%;
+  width: 48%;
 }
 
 /* CHECKBOXES And RADIO */
@@ -1374,10 +1384,9 @@ a:active {
   position: relative;
 
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 .filter-label::before {
   content: "";
@@ -1445,14 +1454,13 @@ a:active {
   position: relative;
 
   display: -ms-flexbox;
-
   display: flex;
   grid-column: 2 / -1;
   grid-row: 2 / 3;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   height: var(--filtersHeight);
-  padding-left: 72px;
+  padding-left: 70px;
 
   background-color: var(--grey-light);
 }
@@ -1523,11 +1531,12 @@ a:active {
 /* GOODS */
 .goods {
   display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display:     grid;
+  grid-template-columns: 1fr 1fr;
   gap: 48px var(--gap);
   margin-bottom: 40px;
+
+  -ms-grid-columns: 1fr 1fr;
 }
 .goods-item {
   position: relative;
@@ -1539,13 +1548,13 @@ a:active {
 .goods-img {
   width: 360px;
   height: 380px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .goods-desc {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 .goods-link {
   margin-right: auto;
@@ -1560,7 +1569,7 @@ a:active {
 .goods-price {
   display: inline-block;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   min-width: 85px;
 
   font-weight: 300;
@@ -1568,7 +1577,7 @@ a:active {
   line-height: 22px;
   font-family: var(--font-theme);
   text-align: right;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.09em;
 }
 .goods-actions {
   position: absolute;
@@ -1576,14 +1585,11 @@ a:active {
   left: -100%;
 
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   width: 100%;
   height: 380px;
 
@@ -1597,7 +1603,8 @@ a:active {
 }
 .goods-btnCart {
   width: 200px;
-  margin-bottom: 22px;
+  margin-top: 172px;
+  margin-bottom: 13px;
 }
 .goods-btnCompare {
   font-weight: 300;
@@ -1624,12 +1631,11 @@ a:active {
   right: 27px;
 
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   width: 62px;
   height: 62px;
 
@@ -1649,9 +1655,9 @@ a:active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 
   background-color: #ebebeb;
 }
@@ -1693,6 +1699,9 @@ a:active {
   margin-right: var(--gap);;
 }
 .pagination-page {
+  padding-right: 14px;
+  padding-left: 14px;
+
   opacity: var(--opacity-more);
 }
 .pagination-page:hover {
